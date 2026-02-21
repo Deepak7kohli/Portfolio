@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  height: 100vh;
+  min-height: 500px;
+}
+
+
+.hero {
+  max-width: 200px;
+}
+
+
+.icons {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.icons img {
+  width: 30px;
+}
+
+
+.button {
+  background: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.colorModeContainer {
+  position: relative;
+}
+
+.colorMode {
+.colorMode {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  cursor: pointer;
+  background: white;
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+}
+
+body {
+  color: var(--text-color);
+}
+
+.description {
+  max-width: 30ch;
+
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;   
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 0 8%;
+  }
+
+  .hero {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    max-width: 400px;
+  }
+}
