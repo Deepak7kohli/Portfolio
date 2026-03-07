@@ -20,8 +20,8 @@ function Projects() {
     p='' 
     />
     <ProjectsCard src={defaultt} 
-    // link={'https://github.com/Deepak7kohli/Gaming_products.git'}
-    h3='N/A' 
+    link={'https://github.com/Deepak7kohli/Portfolio.git'}
+    h3='Portfolio' 
     p='N/A' 
     />
     <ProjectsCard src={defaultt} 
