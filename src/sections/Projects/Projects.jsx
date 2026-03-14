@@ -1,11 +1,10 @@
 import React from 'react'
 import styles from "./Projectstyles.module.css"
 import ProjectsCard from '../../assets/Common/ProjectsCard.jsx'
-import Project1 from '../../assets/Project1.png'
-// import freshBurger from '../../assets/fresh-burger.png'
-// import fitlift from '../../assets/fitlift.png'
-// import hipsster from '../../assets/hipsster.png'
-import defaultt from '../../assets/defaultt.png'
+import project1 from '../../assets/project1.png'
+import project2 from '../../assets/project2.png'
+import project3 from '../../assets/project3.png'
+import project4 from '../../assets/project4.png'
 
 
 
@@ -14,25 +13,25 @@ function Projects() {
     <section id='projects' className={styles.container}>
     <h1 className='sectionTitle'> Projects</h1>
    <div className={styles.projectsContainer}>
-    <ProjectsCard src={Project1} 
-    link={'https://github.com/Deepak7kohli/Gaming_products.git'}
-    h3='Landing Page(Frontend)' 
-    p='' 
+    <ProjectsCard src={project2} 
+    link={'https://simple-weather-app-kohl.vercel.app/'}
+    h3='Weather-App' 
+    p='React | API | CSS' 
     />
-    <ProjectsCard src={defaultt} 
-    link={'https://github.com/Deepak7kohli/Portfolio.git'}
+    <ProjectsCard src={project1} 
+    link={'https://gaming-products.vercel.app/'}
+    h3='Gaming-Accs.' 
+    p='HTML | CSS | JavaScript' 
+    />
+    <ProjectsCard src={project3} 
+    link={'#'}
     h3='Portfolio' 
-    p='N/A' 
+    p='React | Vite | CSS' 
     />
-    <ProjectsCard src={defaultt} 
-    // link={'https://github.com/Deepak7kohli/Gaming_products.git'}
-    h3='N/A' 
-    p='N/A' 
-    />
-    <ProjectsCard src={defaultt} 
-    // link={'https://github.com/Deepak7kohli/Gaming_products.git'}
-    h3='N/A' 
-    p='N/A' 
+    <ProjectsCard src={project4} 
+    link={'https://github.com/Deepak7kohli/sentiment_analysis'}
+    h3='Sentiment Analysis' 
+    p='Python | Machine Learning | NLP' 
     />
     </div> 
     
