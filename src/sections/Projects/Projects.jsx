@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./Projectstyles.module.css"
 import ProjectsCard from '../../assets/Common/ProjectsCard.jsx'
-import project1 from '../../assets/project1.png'
+import project01 from '../../assets/project01.png'
 import project2 from '../../assets/project2.png'
 import project3 from '../../assets/project3.png'
 import project4 from '../../assets/project4.png'
@@ -18,7 +18,7 @@ function Projects() {
     h3='Weather-App' 
     p='React | API | CSS' 
     />
-    <ProjectsCard src={project1} 
+    <ProjectsCard src={project01} 
     link={'https://gaming-products.vercel.app/'}
     h3='Gaming-Accs.' 
     p='HTML | CSS | JavaScript' 
