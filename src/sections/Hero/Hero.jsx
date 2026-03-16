@@ -8,7 +8,7 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import xLight from "../../assets/twitter-light.svg";
 import xDark from "../../assets/twitter-dark.svg";
-import CV from "../../assets/Deepak-resume.pdf";
+import CV from "../../assets/Deepak-Resume-2026.pdf";
 import { useTheme } from "../../assets/Common/themeContext";
 // import {HeroStyle.module.css} from './HeroStyles.module.css'
 
