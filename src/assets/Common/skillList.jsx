@@ -1,10 +1,14 @@
-function SkillList({ src, skill }) {
+import React from 'react';
+
+function SkillList({ skill }) {
+  const iconLetter = skill ? skill.charAt(0).toUpperCase() : '';
+  
   return (
-    <span>
-      <img src={src} alt="checkMark Icon" />
-      <p>{skill}</p>
-    </span>
-  )
+    <div className="skillItemWrapper">
+      <div className="skillIcon">{iconLetter}</div>
+      <div className="skillName">{skill}</div>
+    </div>
+  );
 }
 
-export default SkillList
+export default SkillList;

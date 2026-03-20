@@ -1,82 +1,81 @@
 .container {
-display: flex;
-flex-direction: column;
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  width: 100%;
 }
 
-form {
-display: flex;
-flex-direction: column;
-gap: 30px;
+.description {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  max-width: 500px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
-textarea,
-input:not([type='submit']){
-height: 50px;
-padding-left: 16px;
-width: 250px;
+.emailLink {
+  color: var(--btn-color, #C49679);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 40px;
+  transition: opacity 0.3s ease;
 }
 
-textarea{
-padding-top: 16px;
-resize: none;
-height: 250px;
+.emailLink:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
-
-input,
-textarea {
-border-radius: 20px;
-border:#888 1px solid;
-box-sizing: border-box;
-justify-self: center;
-background-color: var( -- background-color);
-color: var( -- form-text-color);
-
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
 }
 
-::placeholder {
-color: var(--form-text-color);
+.formGroup {
+  width: 100%;
 }
 
-input[type='submit']{
-background-color: var(--btn-color);
-color:var(--btn-text-color);
-border:none;
-border-radius:20px;
-width:126px;
-height:50px;
-font-size:20px;
-font-weight:bold;
-box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
-transition:box-shadow 200ms ease-in-out, transform 200ms
-ease-in-out;
-margin:auto;
-
+.input,
+.textarea {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  background-color: var(--project-card-bg);
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none; /* No heavy shadows per requirement */
 }
 
-input [type='submit' ] hover {
-transform: scale(1.05);
+.textarea {
+  resize: vertical;
+  min-height: 150px;
 }
 
-input [type='submit' ]:active {
-transform: translateY(2px);
-box-shadow: 0 2px 2px Orgba(0, 0, 0, 0.25);
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--btn-color, #C49679);
+  box-shadow: 0 0 0 1px var(--btn-color, #C49679);
 }
 
-@media (width >= 800px) {
-textarea,
-input:not([type='submit'] ){
-width: 600px;
-font-size: 20px;
-}
-form {
-gap: 40px;
-}
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--form-text-color);
+  opacity: 0.7;
 }
 
-@media (width >= 1400px) {
-textarea,
-input:not([type='submit' ] ) {
-width: 800px;}
+.submitBtn {
+  margin-top: 10px;
+  width: 100%; /* Or auto if preferred, 100% makes it very standard and clean */
 }

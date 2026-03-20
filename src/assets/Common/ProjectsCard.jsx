@@ -1,16 +1,18 @@
+import React from 'react';
 
-function ProjectsCard({src,link,h3,p}) {
+function ProjectsCard({ src, link, h3, p }) {
   return (
-    <a href={link} target='_blank'>
-        <br/>
-        <br/>
-        <img className='hover' src={src} alt={`${h3} projects `}/>
+    <div className="projectCard">
+      <img className="projectImg" src={src} alt={`${h3} logo`} />
+      <div className="projectInfo">
         <h3>{h3}</h3>
         <p>{p}</p>
-        
-
-    </a>
+        <a href={link} target="_blank" rel="noopener noreferrer" className="btn viewBtn">
+          View Project
+        </a>
+      </div>
+    </div>
   );
 }
 
-export default ProjectsCard
+export default ProjectsCard;
